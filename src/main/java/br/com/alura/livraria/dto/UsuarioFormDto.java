@@ -24,6 +24,7 @@ public class UsuarioFormDto {
 	
 	@NotBlank
 	@Email
+	@JsonAlias("usuario_email")
 	private String email;
 		
 }

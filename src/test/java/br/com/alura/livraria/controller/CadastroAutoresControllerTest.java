@@ -48,6 +48,7 @@ class CadastroAutoresControllerTest {
 	@BeforeEach
 	public void gerarToken() {
 		Usuario logado = new Usuario("Rafaela","rafa@email.com.br","123456");
+		
 		Perfil admin = perfilRepository.findById(1l).get();
 		logado.adicionarPerfil(admin);
 		usuarioRepository.save(logado);
